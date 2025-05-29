@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Артисты | JAZZ Fest</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="artists.css">
+    <script src="artists-filter.js"></script>
+    <script src="burger.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container"> 
+            <a href="index.html" class="header-title">JAZZ fest</a>
+            
+            <div class="nav-container">
+                <!-- Основная навигация (для десктопа) -->
+                <nav>
+                    <a class="header__link" href="artists.html">исполнители</a>
+                    <a class="header__link" href="program.html">программа</a>
+                    <a class="header__link" href="camping.html">кемпинг</a>
+                    <a class="header__link">контакты</a>
+                </nav>
+                
+              <div class="mobile-menu">
+                <a href="artists.html" class="mobile-link">исполнители</a>
+                <a href="program.html" class="mobile-link">программа</a>
+                <a href="camping.html" class="mobile-link">кемпинг</a>
+                <a class="mobile-link">контакты</a>
+            </div>
+
+                <!-- Бургер-меню (для мобильных) -->
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                
+                <button class="header__btn">билеты</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="artists-section">
+            <div class="container">
+                <div class="section-header"> 
+                    <h1>АРТИСТЫ</h1>
+                    <div class="dates">
+                        <h3>
+                            <span class="date-filter active" data-date="all">ВСЕ</span> 
+                            <span class="date-filter" data-date="12.05">12.05</span> 
+                            <span class="date-filter" data-date="13.05">13.05</span> 
+                            <span class="date-filter" data-date="14.05">14.05</span>
+                        </h3>
+                        <h3>
+                            <span class="date-filter" data-date="19.05">19.05</span> 
+                            <span class="date-filter" data-date="20.05">20.05</span> 
+                            <span class="date-filter" data-date="21.05">21.05</span>
+                        </h3>
+                    </div>
+                </div>
+                
+                <div class="artists-grid">
+                    <!-- 1-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="12.05,19.05">
+                        <img src="images/a1.png" alt="Джо Уэст">
+                        <div class="artist-info">
+                            <h3>Джо Уэст</h3>
+                            <p>малая сцена, 12.05 и 19.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 2-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="13.05,20.05">
+                        <img src="images/a2.png" alt="Латунные ночи">
+                        <div class="artist-info">
+                            <h3>Латунные ночи</h3>
+                            <p>главная сцена, 13.05 и 20.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 3-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a3.png" alt="Марк Стил">
+                        <div class="artist-info">
+                            <h3>Марк Стил</h3>
+                            <p>малая сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 4-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="12.05,19.05">
+                        <img src="images/a4.png" alt="Вечерние ритмы">
+                        <div class="artist-info">
+                            <h3>Вечерние ритмы</h3>
+                            <p>главная сцена, 12.05 и 19.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 5-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="12.05,19.05">
+                        <img src="images/a5.png" alt="Четверть луны">
+                        <div class="artist-info">
+                            <h3>Четверть луны</h3>
+                            <p>главная сцена, 12.05 и 19.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 6-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="13.05,20.05">
+                        <img src="images/a6.png" alt="Рэй Харпер">
+                        <div class="artist-info">
+                            <h3>Рэй Харпер</h3>
+                            <p>малая сцена, 13.05 и 20.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 7-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a7.png" alt="Песок в часах">
+                        <div class="artist-info">
+                            <h3>Песок в часах</h3>
+                            <p>главная сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 8-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a8.png" alt="Томми Чейз">
+                        <div class="artist-info">
+                            <h3>Томми Чейз</h3>
+                            <p>малая сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 9-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="12.05,19.05">
+                        <img src="images/a9.png" alt="Ника Соул">
+                        <div class="artist-info">
+                            <h3>Ника Соул</h3>
+                            <p>малая сцена, 12.05 и 19.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 10-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="13.05,20.05">
+                        <img src="images/a10.png" alt="Сэмми Лайт">
+                        <div class="artist-info">
+                            <h3>Сэмми Лайт</h3>
+                            <p>малая сцена, 13.05 и 20.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 11-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a11.png" alt="Фиолетовый блюз">
+                        <div class="artist-info">
+                            <h3>Фиолетовый блюз</h3>
+                            <p>главная сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 12-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a12.png" alt="Свободный аккорд">
+                        <div class="artist-info">
+                            <h3>Свободный аккорд</h3>
+                            <p>малая сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 13-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="12.05,19.05">
+                        <img src="images/a13.png" alt="Шаги по клавишам">
+                        <div class="artist-info">
+                            <h3>Шаги по клавишам</h3>
+                            <p>главная сцена, 12.05 и 19.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 14-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="13.05,20.05">
+                        <img src="images/a14.png" alt="Гармоничный бриз">
+                        <div class="artist-info">
+                            <h3>Гармоничный бриз</h3>
+                            <p>главная сцена, 13.05 и 20.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 15-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="14.05,21.05">
+                        <img src="images/a15.png" alt="Теплый дождь">
+                        <div class="artist-info">
+                            <h3>Тёплый дождь</h3>
+                            <p>главная сцена, 14.05 и 21.05</p>
+                        </div>
+                    </a>
+                    
+                    <!-- 16-я карточка -->
+                    <a href="group.html" class="artist-card" data-dates="13.05,20.05">
+                        <img src="images/a16.png" alt="Старые ноты">
+                        <div class="artist-info">
+                            <h3>Старые ноты</h3>
+                            <p>главная сцена, 13.05 и 20.05</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!-- Поп-ап 1: отправка данных -->
+
+<div class="overlay" id="overlay" style="display: none;"></div>
+
+<div class="popup form-popup" id="formPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  
+  <div class="titlepop">JAZZ fest</div>
+
+  <div class="textdate">Выберите дату:</div>
+  <div class="dates">
+    <label><input type="checkbox" name="date" value="12 мая"> <span>12 мая</span></label>
+    <label><input type="checkbox" name="date" value="13 мая"> <span>19 мая</span></label>
+    <label><input type="checkbox" name="date" value="14 мая"> <span>13 мая</span></label>
+    <label><input type="checkbox" name="date" value="19 мая"> <span>20 мая</span></label>
+    <label><input type="checkbox" name="date" value="20 мая"> <span>14 мая</span></label>
+    <label><input type="checkbox" name="date" value="21 мая"> <span>21 мая</span></label>
+  </div>
+
+  <form id="jazzForm">
+    <div class="textdate">Введите данные:</div>
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Ваш номер телефона" required>
+    <input type="email" placeholder="Ваш e-mail" required>
+    <label class="consent">
+      <input type="checkbox" required>
+      <span><p1>Я согласен (-а) на обработку персональных данных</p1></span>
+    </label>
+    <button type="submit" class="send">отправить заявку</button>
+  </form>
+</div>
+
+
+
+<!-- Поп-ап 2: благодарность -->
+<div class="popup success-popup" id="successPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  <div class="texts1"><h2>Спасибо за вашу заявку!</h2></div>
+  <div class="texts2"><p>Наш менеджер скоро свяжется с вами.</p></div>
+  <div class="texts3"><p>Если у вас возникли какие-то вопросы,<br>обращайтесь по номеру <strong>+7 (111) 222-33-44</strong></p></div>
+</div>
+
+
+    <footer class="footer">
+        <div class="container"> 
+            <h3 class="footer-title">JAZZ fest</h3>
+            <div class="footer-content">
+                <!-- Первая колонка -->
+                <div class="footer-column">
+                    <h5>О фестивале</h5>
+                    <p>СМИ о нас</p>
+                    <p>Здоровье и безопасность</p>
+                    <p>Наши другие фестивали</p>
+                    <p>Наши партнеры</p>
+                </div>
+
+                <!-- Вторая колонка -->
+                <div class="footer-column">
+                    <h5>Посетителям</h5>
+                    <p>Программа</p>
+                    <p>Кемпинг</p>
+                    <p>Как оформить билет</p>
+                    <p>Возврат средств</p>
+                </div>
+
+                <!-- Третья колонка -->
+                <div class="footer-column">
+                    <h5>Артистам</h5>
+                    <p>Условия участия</p>
+                    <p>Как стать участником</p>
+                </div>
+
+                <!-- Четвертая колонка -->
+                <div class="footer-column">
+                    <h5>Контакты</h5>
+                    <p>+7 (999) 777-99-77</p>
+                    <p>jazz@fest.ru</p>
+                </div>
+
+                <!-- Пятая колонка (широкая) -->
+                <div class="footer-column wide-column">
+                    <h5>Мы в социальных сетях</h5>
+                    <img src="images/tg.svg" class="f-image">
+                    <img src="images/vk.svg" class="f-image">
+                    <img src="images/yt.svg" class="f-image">
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script1.js"></script>
+</body>
+</html>

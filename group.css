@@ -1,0 +1,306 @@
+
+.section_1 {
+  background-color: #264249;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.text-header h1 {
+  color: #D7C3B9;
+  margin-bottom: 60px;
+}
+
+.group {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 0;
+    gap: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+}
+
+.big1 img {
+  width: 60%;
+}
+
+.group h3 {
+  color: #D7C3B9;
+  margin-bottom: 30px;
+}
+
+.group p {
+  color: #D7C3B9;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.program-btn {
+  width: 325px;
+  height: 75px;
+  background-color: #A92C2E;
+  color: #D7C3B9;
+  font-family: "Visby CF";
+  font-size: 24px;
+  border: 0;
+  border-radius: 15px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.program-btn:hover {
+  background-color: #D7C3B9;
+  color: #A92C2E;
+  cursor: pointer;
+}
+
+
+.section_2 {
+  display: flex;
+  height: 100%;
+  background-color: #D7C3B9;
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.text-2 h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.image-column {
+
+    flex-direction: column;
+    width: 32%; /* Ширина колонки */
+    gap: 20px; /* Расстояние между изображениями в колонке */
+    margin-bottom: 150px;
+}
+
+/* Специфичные стили для средней колонки */
+.middle-column {
+    position: relative;
+    top: 150px; /* Сдвигаем среднюю колонку вниз */
+}
+
+/* Стили для изображений */
+.image-column img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Специфичное позиционирование изображений */
+.img-top {
+    align-self: flex-start;
+}
+
+.img-bottom {
+    align-self: flex-end;
+    padding-top: 80px;
+}
+
+/* Для первой колонки */
+.image-column:first-child .img-top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image-column:first-child .img-bottom {
+    margin-top: -50px;
+}
+
+/* Для третьей колонки */
+.image-column:last-child .img-top {
+    margin-top: 0px;
+}
+
+.image-column:last-child .img-bottom {
+    margin-top: 0px;
+}
+
+/* Добавьте это в конец файла group.css */
+
+/* Адаптация для 1024px */
+@media (max-width: 1024px) {
+    .group {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-left: 0;
+    }
+    
+    .big1 img {
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    .text-info {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .middle-column {
+        top: 100px;
+    }
+    
+    .image-column {
+        margin-bottom: 100px;
+    }
+    
+    .img-bottom {
+        padding-top: 60px;
+    }
+}
+
+/* Адаптация для 768px */
+@media (max-width: 768px) {
+    .section_1, .section_2 {
+        padding: 40px 0;
+    }
+    
+    .text-header h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .group h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .group p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .program-btn {
+        width: 280px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .columns-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .image-column {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    
+    .middle-column {
+        top: 0;
+    }
+    
+    .img-top, .img-bottom {
+        align-self: center;
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
+    
+    .image-column:first-child .img-top,
+    .image-column:first-child .img-bottom {
+        margin: 0 !important;
+    }
+}
+
+/* Адаптация для 320px */
+@media (max-width: 320px) {
+    .text-header h1 {
+        font-size: 36px;
+    }
+    
+    .group h3 {
+        font-size: 20px;
+    }
+    
+    .group p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .program-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .image-column {
+        width: 90%;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    
+    .footer-column.wide-column {
+        text-align: center;
+    }
+    
+    .f-image {
+        margin: 0 10px;
+    }
+}
+
+/* Общие адаптивные стили для попапов */
+@media (max-width: 768px) {
+    .popup {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .dates {
+        grid-template-columns: 1fr;
+    }
+    
+    .texts1 h2 {
+        font-size: 24px;
+    }
+}
+
+/* Адаптация хедера */
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+    
+    .header-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        padding: 0 15px;
+    }
+    
+    .header__btn {
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-title {
+        font-size: 28px;
+    }
+    
+    .header__btn {
+        width: 100px;
+        font-size: 14px;
+    }
+}

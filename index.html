@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>JAZZ Fest</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="index.css">
+     <script src="index.js"></script>
+      <script src="burger.js"></script>
+
+  </head>
+
+  <body>
+    <header class="header">
+        <div class="container"> 
+            <a href="index.html" class="header-title">JAZZ fest</a>
+            
+            <div class="nav-container">
+                <!-- Основная навигация (для десктопа) -->
+                <nav>
+                    <a class="header__link" href="artists.html">исполнители</a>
+                    <a class="header__link" href="program.html">программа</a>
+                    <a class="header__link" href="camping.html">кемпинг</a>
+                    <a class="header__link">контакты</a>
+                </nav>
+                
+        <div class="mobile-menu">
+                <a href="artists.html" class="mobile-link">исполнители</a>
+                <a href="program.html" class="mobile-link">программа</a>
+                <a href="camping.html" class="mobile-link">кемпинг</a>
+                <a class="mobile-link">контакты</a>
+            </div>
+
+                <!-- Бургер-меню (для мобильных) -->
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                
+                <button class="header__btn">билеты</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+      <section class="section01">
+        <div class="container">
+          <img class="bg1" src="images/bg11.png">
+          <img class="bg111" src="images/bg1.png">
+          <img class="bg2" src="images/bg22.png">
+          <img class="bg222" src="images/bg2.png">
+          <img class="bg3" src="images/bg33.png">
+          <img class="bg333" src="images/bg3.png">
+          <div class="text-overlay"><h1>МАЙ 12–14<br>& 19–21</h1><br><h3>АРТ-парк Никола-Ленивец</h3></div>
+          <button class="section01__btn">купить билет</button>
+        </div>
+      </section>
+
+
+
+
+      <section class="section02">
+        <div class="container">
+          <div class="text2"><h1>ДЖАЗОВЫЙ<br>ФЕСТИВАЛЬ</h1><h4>6 дней потрясающей музыки<br>от самых популярных джазовых артистов<br>в сердце АРТ-парка Никола-Ленивец</h4></div>
+        </div>
+      </section>
+
+      <section class="section03">
+        <div class="grid-container">
+
+          <div class="grid-item">
+            <img src="images/image1.png" alt="Выступления">
+            <div class="description">
+              <h3>ВЫСТУПЛЕНИЯ<br>на двух сценах<br>16 исполнителей</h3>
+              <p>вечерние выступления звёзд
+и камерные акустические сеты</p>
+            </div>
+          </div>
+          
+          <div class="grid-item">
+            <img src="images/image2.png" alt="Арт-парк">
+            <div class="description">
+              <h3>АРТ-ПАРК<br>под открытым<br>небом</h3>
+              <p>600 гектаров лесов и полей, 30 арт-объектов</p>
+            </div>
+          </div>
+          
+          <div class="grid-item">
+            <img src="images/image3.png" alt="Еда">
+            <div class="description">
+              <h3>ЕДА<br>из любимых<br>ресторанов</h3>
+              <p>крафтовые коктейли и стейки
+под живые ритмы</p>
+            </div>
+          </div>
+          
+          <div class="grid-item">
+            <img src="images/image4.png" alt="Мероприятия">
+            <div class="description">
+              <h3>ВИНИЛОВАЯ лавка</h3>
+              <p>редкие записи и коллекционные издания
+джазовой классики</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section04">
+        <div class="container">
+          <h2>КЕМПИНГ</h2>
+          <div class="camps">
+            <div class="camp">
+              <a href="camping.html" style="display: block; height: 100%; text-decoration: none; color: inherit;">
+              <img src="images/camp_1.png">
+              <h4>Наши домики</h4>
+              <p>Большой выбор арт-домов для разных компаний.</p>
+            </a>
+            </div>
+            <div class="camp">
+              <a href="camping.html" style="display: block; height: 100%; text-decoration: none; color: inherit;">
+              <img src="images/camp_2.png">
+              <h4>Место для палатки</h4>
+              <p>Вы можете приехать со своей палаткой или воспользоваться нашими.</p>
+            </a>
+            </div>
+            <div class="camp">
+              <a href="camping.html" style="display: block; height: 100%; text-decoration: none; color: inherit;">
+              <img src="images/camp_3.png">
+              <h4>Автокемпинг</h4>
+              <p>Включает в себя места<br>для установки палаток, лёгких домов, места для стоянок автомобилей, мотоциклов,<br>автодомов.</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+<!-- Поп-ап 1: отправка данных -->
+
+<div class="overlay" id="overlay" style="display: none;"></div>
+
+<div class="popup form-popup" id="formPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  
+  <div class="titlepop">JAZZ fest</div>
+
+  <div class="textdate">Выберите дату:</div>
+  <div class="dates">
+    <label><input type="checkbox" name="date" value="12 мая"> <span>12 мая</span></label>
+    <label><input type="checkbox" name="date" value="13 мая"> <span>19 мая</span></label>
+    <label><input type="checkbox" name="date" value="14 мая"> <span>13 мая</span></label>
+    <label><input type="checkbox" name="date" value="19 мая"> <span>20 мая</span></label>
+    <label><input type="checkbox" name="date" value="20 мая"> <span>14 мая</span></label>
+    <label><input type="checkbox" name="date" value="21 мая"> <span>21 мая</span></label>
+  </div>
+
+  <form id="jazzForm">
+    <div class="textdate">Введите данные:</div>
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Ваш номер телефона" required>
+    <input type="email" placeholder="Ваш e-mail" required>
+    <label class="consent">
+      <input type="checkbox" required>
+      <span><p1>Я согласен (-а) на обработку персональных данных</p1></span>
+    </label>
+    <button type="submit" class="send">отправить заявку</button>
+  </form>
+</div>
+
+
+
+<!-- Поп-ап 2: благодарность -->
+<div class="popup success-popup" id="successPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  <div class="texts1"><h2>Спасибо за вашу заявку!</h2></div>
+  <div class="texts2"><p>Наш менеджер скоро свяжется с вами.</p></div>
+  <div class="texts3"><p>Если у вас возникли какие-то вопросы,<br>обращайтесь по номеру <strong>+7 (111) 222-33-44</strong></p></div>
+</div>
+
+    <footer class="footer">
+      <div class="container"> 
+      <h3 class="footer-title">JAZZ fest</h3>
+        <div class="footer-content">
+        <!-- Первая колонка -->
+          <div class="footer-column">
+            <h5>О фестивале</h5>
+            <p>СМИ о нас</p>
+            <p>Здоровье и безопасность</p>
+            <p>Наши другие фестивали</p>
+            <p>Наши партнеры</p>
+          </div>
+
+        <!-- Вторая колонка -->
+          <div class="footer-column">
+            <h5>Посетителям</h5>
+            <p>Программа</p>
+            <p>Кемпинг</p>
+            <p>Как оформить<br>билет</p>
+            <p>Возврат средств</p>
+          </div>
+
+        <!-- Третья колонка -->
+          <div class="footer-column">
+            <h5>Артистам</h5>
+            <p>Условия участия</p>
+            <p>Как стать<br>участником</p>
+          </div>
+
+        <!-- Четвертая колонка -->
+          <div class="footer-column">
+            <h5>Контакты</h5>
+            <p>+7 (999) 777-99-77</p>
+            <p>jazz@fest.ru</p>
+          </div>
+
+        <!-- Пятая колонка (широкая) -->
+          <div class="footer-column wide-column">
+            <h5>Мы в социальных сетях</h5>
+            <img src="images/tg.svg" class="f-image">
+            <img src="images/vk.svg" class="f-image">
+            <img src="images/yt.svg" class="f-image">
+          </div>
+      </div>
+    </footer>
+<script src="script1.js"></script>
+  </body>
+</html>

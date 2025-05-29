@@ -1,0 +1,189 @@
+  <!DOCTYPE HTML>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <title>Программа | JAZZ Fest</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="program.css">
+      <script src="burger.js"></script>
+    </head>
+
+    <body>
+      <header class="header">
+          <div class="container"> 
+              <a href="index.html" class="header-title">JAZZ fest</a>
+              
+              <div class="nav-container">
+                  <!-- Основная навигация (для десктопа) -->
+                  <nav>
+                      <a class="header__link" href="artists.html">исполнители</a>
+                      <a class="header__link" href="program.html">программа</a>
+                      <a class="header__link" href="camping.html">кемпинг</a>
+                      <a class="header__link">контакты</a>
+                  </nav>
+
+                <div class="mobile-menu">
+                  <a href="artists.html" class="mobile-link">исполнители</a>
+                  <a href="program.html" class="mobile-link">программа</a>
+                  <a href="camping.html" class="mobile-link">кемпинг</a>
+                  <a class="mobile-link">контакты</a>
+              </div>
+                  
+                  <!-- Бургер-меню (для мобильных) -->
+                  <div class="burger-menu">
+                      <div class="burger-line"></div>
+                      <div class="burger-line"></div>
+                      <div class="burger-line"></div>
+                  </div>
+                  
+                  <button class="header__btn">билеты</button>
+              </div>
+          </div>
+      </header>
+
+      <main class="program-main">
+        <section class="program-section">
+          <div class="program-day first-day">
+            <div class="background-images">
+              <img src="images/bg_p1.png" class="bg-image bg-1">
+              <img src="images/bg_p2.png" class="bg-image bg-2">
+              <img src="images/bg_p3.png" class="bg-image bg-3">
+            </div>
+            <div class="day-container">
+              <h1>МАЙ 12 & 19</h1>
+              <div class="program-events">
+                <h3>Четверть луны<br>Шаги по клавишам<br>Вечерние ритмы</h3>
+              </div>
+              <div class="program-artists">
+                <p>а также<br>Ника Соул<br>Джо Уэст</p>
+              </div>
+              <button class="program-btn">купить билет</button>
+            </div>
+          </div>
+
+          <div class="program-day second-day">
+            <div class="background-images">
+              <img src="images/bg_p4.png" class="bg-image bg-1">
+              <img src="images/bg_p5.png" class="bg-image bg-5">
+              <img src="images/bg_p6.png" class="bg-image bg-3">
+            </div>
+            <div class="day-container">
+              <h1>МАЙ 13 & 20</h1>
+              <div class="program-events">
+                <h3>Латунные ночи<br>Старые ноты<br>Гармоничный бриз</h3>
+              </div>
+              <div class="program-artists">
+                <p>а также<br>Рей Харпер<br>Сэмми Лайт</p>
+              </div>
+              <button class="program-btn">купить билет</button>
+            </div>
+          </div>
+
+          <div class="program-day third-day">
+            <div class="background-images">
+              <img src="images/bg_p7.png" class="bg-image bg-1">
+              <img src="images/bg_p8.png" class="bg-image bg-4">
+              <img src="images/bg_p9.png" class="bg-image bg-3">
+            </div>
+            <div class="day-container">
+              <h1>МАЙ 14 & 21</h1>
+              <div class="program-events">
+                <h3>Тёплый дождь<br>Песок в часах<br>Фиолетовый блюз</h3>
+              </div>
+              <div class="program-artists">
+                <p>а также<br>Свободный аккорд<br>Марк Стил<br>Томми Чейз</p>
+              </div>
+              <button class="program-btn">купить билет</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+  <!-- Поп-ап 1: отправка данных -->
+
+  <div class="overlay" id="overlay" style="display: none;"></div>
+
+  <div class="popup form-popup" id="formPopup" style="display: none;">
+    <button class="popup-close" aria-label="Закрыть попап">×</button>
+    
+    <div class="titlepop">JAZZ fest</div>
+
+    <div class="textdate">Выберите дату:</div>
+    <div class="dates">
+      <label><input type="checkbox" name="date" value="12 мая"> <span>12 мая</span></label>
+      <label><input type="checkbox" name="date" value="13 мая"> <span>19 мая</span></label>
+      <label><input type="checkbox" name="date" value="14 мая"> <span>13 мая</span></label>
+      <label><input type="checkbox" name="date" value="19 мая"> <span>20 мая</span></label>
+      <label><input type="checkbox" name="date" value="20 мая"> <span>14 мая</span></label>
+      <label><input type="checkbox" name="date" value="21 мая"> <span>21 мая</span></label>
+    </div>
+
+    <form id="jazzForm">
+      <div class="textdate">Введите данные:</div>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Ваш номер телефона" required>
+      <input type="email" placeholder="Ваш e-mail" required>
+      <label class="consent">
+        <input type="checkbox" required>
+        <span><p1>Я согласен (-а) на обработку персональных данных</p1></span>
+      </label>
+      <button type="submit" class="send">отправить заявку</button>
+    </form>
+  </div>
+
+
+
+  <!-- Поп-ап 2: благодарность -->
+  <div class="popup success-popup" id="successPopup" style="display: none;">
+    <button class="popup-close" aria-label="Закрыть попап">×</button>
+    <div class="texts1"><h2>Спасибо за вашу заявку!</h2></div>
+    <div class="texts2"><p>Наш менеджер скоро свяжется с вами.</p></div>
+    <div class="texts3"><p>Если у вас возникли какие-то вопросы,<br>обращайтесь по номеру <strong>+7 (111) 222-33-44</strong></p></div>
+  </div>
+
+
+      <footer class="footer">
+        <div class="container"> 
+          <h3 class="footer-title">JAZZ fest</h3>
+          <div class="footer-content">
+            <div class="footer-column">
+              <h5>О фестивале</h5>
+              <p>СМИ о нас</p>
+              <p>Здоровье и безопасность</p>
+              <p>Наши другие фестивали</p>
+              <p>Наши партнеры</p>
+            </div>
+
+            <div class="footer-column">
+              <h5>Посетителям</h5>
+              <p>Программа</p>
+              <p>Кемпинг</p>
+              <p>Как оформить билет</p>
+              <p>Возврат средств</p>
+            </div>
+
+            <div class="footer-column">
+              <h5>Артистам</h5>
+              <p>Условия участия</p>
+              <p>Как стать участником</p>
+            </div>
+
+            <div class="footer-column">
+              <h5>Контакты</h5>
+              <p>+7 (999) 777-99-77</p>
+              <p>jazz@fest.ru</p>
+            </div>
+
+            <div class="footer-column wide-column">
+              <h5>Мы в социальных сетях</h5>
+              <img src="images/tg.svg" class="f-image">
+              <img src="images/vk.svg" class="f-image">
+              <img src="images/yt.svg" class="f-image">
+            </div>
+          </div>
+        </div>
+      </footer>
+  <script src="script1.js"></script>
+    </body>
+  </html>

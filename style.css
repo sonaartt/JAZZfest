@@ -1,0 +1,693 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Xolonium';
+    src: url('fonts/Xolonium-Regular.otf') format('otf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby CF';
+    src: url('fonts/VisbyCF-Light.ttf') format('ttf'),
+         url('fonts/VisbyCF-Medium') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Стили для заголовков */
+h1 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 110px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 64px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 48px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'Visby CF', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+/* Стили для обычного текста */
+body {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 125px;
+}
+
+p {
+    font-family: 'Visby CF';
+    font-size: 24px;
+    margin: 0;
+    color: #171717;
+    font-weight: lighter;
+}
+
+p1 {
+    font-family: 'Visby CF';
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+
+
+.container {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #a92c2e;
+    font-family: "Visby CF";
+    position: sticky;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999;
+}
+
+.header .container {
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.header__link {
+    font-size: 20px;
+    color: #D7C3B9;
+    text-decoration: none;
+    transition: opacity 0.4s;
+}
+
+.header__link:hover {
+    opacity: 0.6;
+}
+
+.header-title {
+    color: #D7C3B9;
+    text-decoration: none; 
+    font-family: 'Xolonium', sans-serif;
+    font-size: 48px;
+    transition: opacity 0.3s;
+    z-index: 1000;
+    margin-right: auto; 
+    white-space: nowrap;
+}
+
+.header-title:hover {
+    opacity: 0.8;
+    color: #D7C3B9; 
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    transition: all 0.3s ease;
+}
+
+.header__btn {
+    width: 210px;
+    height: 55px;
+    background-color: #D7C3B9;
+    color: #A92C2E;
+    font-family: "Visby CF";
+    font-size: 24px;
+    border: 0;
+    border-radius: 15px;
+    transition: color 0,5s; 
+    transition: background-color 0,5s;
+    z-index: 1000;
+}
+
+.header__btn:hover {
+    background-color: #6A6A6A;
+    color: #D7C3B9;
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 2000;
+    position: relative;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #D7C3B9;
+    transition: all 0.3s ease;
+}
+
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #a92c2e;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-link {
+    color: #D7C3B9;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0;
+    transition: opacity 0.3s;
+}
+
+.mobile-link:hover {
+    opacity: 0.7;
+}
+
+.mobile-menu {
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.footer {
+height: 426px;
+background-color: #6A6A6A;
+margin: 0;
+}
+
+.footer-title {
+    padding-bottom: 20px;
+    padding-top: 55px;
+}
+
+.footer-content {
+    display: flex; 
+    gap: 20px;
+    margin: 0;
+}
+
+.footer-column {
+    width: 210px;
+    margin: 0;
+}
+
+.footer-column.wide-column {
+    width: 325px;
+    padding-left: 135px;
+}
+
+.footer-column h5 {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.footer-column p {
+    font-size: 20px; 
+    padding-bottom: 15px; 
+    font-weight: 400;
+}
+
+.f-image {
+    height: 20px;
+    padding-right: 40px;
+}
+
+
+
+
+
+
+
+#formPopup, #successPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+} 
+
+
+
+
+#successPopup {
+  background: #D6DDE0;
+  border-radius: 16px;
+  height: 276px;
+  width: 476px;
+  text-align: center;
+  display: flex;                /* Добавляем flex */
+  flex-direction: column;       /* Располагаем элементы вертикально */
+  justify-content: center;      /* Центрируем по вертикали */
+  align-items: center;          /* Центрируем по горизонтали */
+  padding: 2rem;                /* Внутренние отступы */
+  box-sizing: border-box;       /* Чтобы padding не увеличивал размер */
+  position: relative;           /* Для позиционирования кнопки закрытия */
+}
+
+.texts1, .texts2, .texts3 {
+  width: 100%;                  /* Занимают всю ширину попапа */
+  margin: 8px 0;                /* Отступы между текстовыми блоками */
+}
+
+.texts1 h2 {
+  font-size: 2rem;
+  color: #a81e21;
+  margin: 0 0 1rem 0;           /* Убираем лишние отступы */
+}
+
+.texts2 p, .texts3 p {
+  font-size: 1.1rem;
+  color: #000;
+  margin: 0.5rem 0;             /* Контролируемые отступы */
+}
+
+
+body.popup-open {
+  overflow: hidden;
+}
+
+
+#formPopup {
+  max-height: 90vh;
+  max-width: 600px; /* Сделали уже */
+  width: 90%;       /* Чтобы адаптировалось под экраны поменьше */
+  overflow-y: auto;
+  background: #D7C3B9;
+  border-radius: 16px;
+  padding: 40px 30px;
+  padding-top: 30px;
+  font-family: 'Xolonium', sans-serif;
+  position: fixed;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+.titlepop {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom:20px;
+  color: #a81e21;
+}
+
+
+.textdate {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+  margin-bottom: 30px;
+}
+
+.dates label {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+}
+
+.dates input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #a81e21;
+  margin-right: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.dates input[type="checkbox"]:checked {
+  background-color: #a81e21;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
+  width: 100%;
+  font-family: "Visby CF";
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #a81e21;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #a81e21;
+  background-color: #D7C3B9;
+  box-sizing: border-box; 
+}
+
+form input::placeholder {
+  color: #a81e21;
+  opacity: 1;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #a81e21;
+  margin-bottom: 20px;
+}
+
+.consent input[type="checkbox"] {
+  appearance: none;
+  width: 25px;
+  height: 20px;
+  border: 2px solid #a81e21;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.consent input[type="checkbox"]:checked {
+  background-color: #a81e21;
+}
+
+.send {
+  background-color: #a81e21;
+  color: #D7C3B9;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+    color: #D7C3B9;
+    font-family: "Visby CF";
+    border: 0;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 2;
+
+}
+
+.send:hover {
+    background-color: #6A6A6A;
+    color: #D7C3B9;
+    cursor: pointer;
+}
+
+
+.overlay {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный */
+  z-index: 998;
+}
+
+/* Убедись, что попапы имеют z-index выше */
+#formPopup, #successPopup {
+  z-index: 999;
+  position: fixed;
+  /* другие стили, которые у тебя уже есть */
+}
+
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  color: #D7C3B9;
+  background-color: #a81e21;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+}
+
+.popup-close:hover {
+  background-color: #6A6A6A;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+    
+    .nav-container {
+        gap: 25px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+    
+    nav {
+        display: none;
+    }    
+    
+    .footer-column.wide-column {
+        padding-left: 50px;
+        width: 250px;
+    }
+
+    .footer-column p {
+    font-size: 16px; 
+}
+
+.footer-column h5 {
+    font-size: 20px; 
+}
+    
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 48px;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+
+        .burger-menu.active .burger-line:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+    
+    .header .container {
+        height: 100px;
+    }
+    
+    .header-title {
+        font-size: 36px;
+        margin-right: 0;
+    
+    nav {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+        order: 1;
+        margin-left: 20px;
+    }
+
+    .mobile-menu {
+        top: 100px; /* Важно: должно совпадать с высотой шапки */
+    }
+
+    .header__btn {
+        width: 180px;
+        height: 45px;
+        font-size: 18px;
+        order: 2;
+    }
+
+    .burger-menu.active .burger-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+        .mobile-menu {
+        top: 100px; /* Важно: должно совпадать с высотой шапки */
+    }
+
+    .burger-menu {
+    display: flex;
+    margin-left: 15px;
+    }
+
+    .header .container {
+    align-items: flex;
+    }
+
+    .header-title {
+    font-size: 28px;
+    }
+    
+    .header__link {
+        font-size: 16px;
+    }
+    .header__btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    }
+    
+    .mobile-link {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    #formPopup {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    
+    .titlepop {
+        font-size: 36px;
+    }
+    
+    .dates {
+        grid-template-columns: 1fr;
+    }
+    
+    #successPopup {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+    
+    .header .container {
+        height: 100px;
+    }
+}

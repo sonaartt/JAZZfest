@@ -1,0 +1,169 @@
+.artists-section {
+    background-color: #D7C3B9;
+    padding: 60px 0px;
+    min-height: auto;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.artists-section h1 {
+    color: #171717;
+    margin: 0;
+}
+
+.dates h3 {
+  font-family: 'Xolonium', sans-serif;
+  color: #171717;
+  margin: 0;  
+  font-size: 24px;
+    line-height: 1.8;
+  display: flex;         
+  justify-content: flex-end; /* Выравнивание по правому краю */
+  gap: 15px;             /* Расстояние между датами */
+}
+
+/* Добавить обертку для управления рядами */
+.dates {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.date-filter {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 15px;
+    position: relative;
+}
+
+.date-filter:hover {
+    color: #A92C2E;
+}
+
+.date-filter.active {
+    color: #A92C2E;
+    text-decoration: underline;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 325px);
+    gap: 20px;
+    row-gap: 60px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+
+.artist-card {
+    display: block;
+    text-decoration: none;
+    color: inherit; 
+    width: 325px;
+    height: 370px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: visible; 
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 282px;
+    object-fit: scale-down;
+}
+
+.artist-info {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.artist-info h3 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 24px;
+    color: #171717;
+    margin-bottom: 10px;
+}
+
+.artist-info p {
+    font-family: 'Visby CF', sans-serif;
+    font-size: 20px;
+    color: #171717;
+}
+
+
+@media (max-width: 1024px) {
+    .artists-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .artist-card {
+        width: 100%;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dates {
+        padding-top: 20px;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dates h3 {
+        font-size: 20px;
+        gap: 10px;
+    }
+    
+    .artist-info h3 {
+        font-size: 20px;
+    }
+    
+    .artist-info p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .artists-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dates h3 {
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .date-filter {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    
+    .artist-card img {
+        height: 200px;
+    }
+    
+    .artist-card {
+        height: auto;
+    }
+}

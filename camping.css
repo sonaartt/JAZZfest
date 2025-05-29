@@ -1,0 +1,282 @@
+/* Основные стили секций */
+.camping-header-section {
+    background-color: #D7C3B9;
+    padding: 60px 0;
+}
+
+.camping-type-section {
+    background-color: #D7C3B9;
+    padding: 0 0 60px;
+}
+
+/* Контейнер для ограничения ширины 1360px */
+.camping-header-section .container,
+.camping-type-section .container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок и фильтры */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.camping-section h1 {
+    color: #171717;
+    font-family: 'Xolonium', sans-serif;
+    font-size: 64px;
+    margin: 0;
+}
+
+.filters h3 {
+    font-family: 'Xolonium', sans-serif;
+    color: #171717;
+    margin: 0;
+    text-align: right;
+    font-size: 24px;
+    line-height: 2.3;
+}
+
+.filter {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 60px;
+    position: relative;
+}
+
+.filter:hover {
+    color: #A92C2E;
+}
+
+.filter.active {
+    color: #A92C2E;
+    text-decoration: underline;
+}
+
+/* Подзаголовки секций */
+.subtitle {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 48px;
+    color: #171717;
+    margin: 0 0 60px 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Сетка карточек для домиков и номеров */
+.camping-grid,
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+    width: 100%;
+}
+
+/* Общие стили карточек */
+.camping-card {
+    width: 100%;
+    height: 640px;
+    border-radius: 15px;
+    overflow: visible; 
+    transition: transform 0.3s ease;
+}
+
+.camping-card:hover {
+    transform: translateY(-10px);
+}
+
+.camping-card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: scale-down;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    font-family: 'Xolonium', sans-serif;
+    font-size: 32px;
+    color: #171717;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.card-info p {
+    font-family: 'Visby CF', sans-serif;
+    font-size: 24px;
+    color: #171717;
+    margin: 0;
+}
+
+
+
+/* Стили для секции палаток */
+.tents-section {
+    padding-bottom: 60px;
+}
+
+.tents-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.tents-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.tents-section .camping-card {
+    width: calc(50% - 10px);
+    max-width: 440px;
+    height: 640px;
+}
+
+/* Стили для секции номеров */
+.rooms-section {
+    padding-bottom: 60px;
+}
+
+.rooms-grid {
+    margin-top: 0;
+}
+
+/* Стили для секции автокемпинга */
+.autocamping-section {
+    padding-bottom: 60px;
+}
+
+.autocamping-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    gap: 20px;
+}
+
+.autocamping-section .camping-card {
+    width: calc(50% - 10px);
+    max-width: 440px;
+    height: 640px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1024px) {
+    .camping-grid,
+    .rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .filters h3 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .camping-grid,
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tents-row,
+    .autocamping-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tents-section .camping-card,
+    .autocamping-section .camping-card {
+        width: 100%;
+        max-width: 440px;
+    }
+    
+    .filter {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .camping-grid, .rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filters {
+        padding-top: 20px;
+        align-self: flex-end;
+    }
+    
+    .tents-section .camping-card,
+    .autocamping-section .camping-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .camping-card {
+        height: 500px;
+    }
+    
+    .camping-card img {
+        height: 300px;
+    }
+    
+    .card-info h3 {
+        font-size: 24px;
+    }
+    
+    .card-info p {
+        font-size: 18px;
+    }
+    
+    .tents-row, .autocamping-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tents-section .camping-card,
+    .autocamping-section .camping-card {
+        width: 100%;
+        margin: 0 0 20px 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .camping-grid, .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .camping-card {
+        height: auto;
+    }
+    
+    .filter {
+        margin-left: 20px;
+    }
+    
+    .subtitle {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+}

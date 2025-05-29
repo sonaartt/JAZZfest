@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Кемпинг | JAZZ Fest</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="camping.css">
+     <script src="camping-filter.js"></script>
+     <script src="burger.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+        <div class="container"> 
+            <a href="index.html" class="header-title">JAZZ fest</a>
+            
+            <div class="nav-container">
+                <!-- Основная навигация (для десктопа) -->
+                <nav>
+                    <a class="header__link" href="artists.html">исполнители</a>
+                    <a class="header__link" href="program.html">программа</a>
+                    <a class="header__link" href="camping.html">кемпинг</a>
+                    <a class="header__link">контакты</a>
+                </nav>
+
+              <div class="mobile-menu">
+                <a href="artists.html" class="mobile-link">исполнители</a>
+                <a href="program.html" class="mobile-link">программа</a>
+                <a href="camping.html" class="mobile-link">кемпинг</a>
+                <a class="mobile-link">контакты</a>
+            </div>
+                
+                <!-- Бургер-меню (для мобильных) -->
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                
+                <button class="header__btn">билеты</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        
+    <section class="camping-header-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>КЕМПИНГ</h1>
+                <div class="filters">
+                    <h3>
+                        <span class="filter active" data-filter="all">ВСЕ</span> 
+                        <span class="filter" data-filter="houses">Домики</span> 
+                        <span class="filter" data-filter="auto">Авто</span>
+                    </h3>
+                    <h3>
+                        <span class="filter" data-filter="rooms">Номера</span> 
+                        <span class="filter" data-filter="tents">Палатки</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="camping-section camping-type-section" data-section="houses">
+        <div class="container">
+        <div class="camping-content">
+            <h2 class="subtitle" data-category="houses" data-section="houses">Наши домики</h2>
+                    <div class="camping-grid">
+                        <!-- 1-й ряд -->
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp1.png" alt="Домик у озера">
+                            <div class="card-info">
+                                <h3>Пьяный дом</h3>
+                                <p>Летний двухместный домик в зоне кемпинга с одной двуспальной кроватью.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp2.png" alt="Лесной домик">
+                            <div class="card-info">
+                                <h3>Дворец-скворец</h3>
+                                <p>Эта метафора дома для птицы, который может легко стать жилищем для человека, трансформировалась в небольшой гостевой дом.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp3.png" alt="Премиум шале">
+                            <div class="card-info">
+                                <h3>Вилла ПО-2</h3>
+                                <p>Компактная постройка состоит из всем знакомых бывших в употреблении бетонных заборных советских плит серии ПО-2.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 2-й ряд -->
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp4.png" alt="Стандартный номер">
+                            <div class="card-info">
+                                <h3>Дом-антресоль</h3>
+                                <p>Дом-антресоль — жилой арт-объект, который самим своим существованием ставит вопрос о границах эстетического и утилитарно-бытового.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp5.png" alt="Люкс">
+                            <div class="card-info">
+                                <h3>ДубльДом</h3>
+                                <p>Четырехместный дом для семьи или компании друзей.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp6.png" alt="Глэмпинг палатка">
+                            <div class="card-info">
+                                <h3>Штаб</h3>
+                                <p>Проект во многом пересекается с вопросами, которые задавали себе конструктивисты в начале прошлого века, проектируя жизнь человека будущего.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 3-й ряд -->
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp7.png" alt="Стандартная палатка">
+                            <div class="card-info">
+                                <h3>Русское идеальное</h3>
+                                <p>Необычный павильон разместился на рельефе с перепадом высоты, благодаря чему «труба» буквально зависла в воздухе.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp8.png" alt="Автокемпинг">
+                            <div class="card-info">
+                                <h3>Дом с люстрой</h3>
+                                <p>Жилой модуль для двух человек, выполнен из дерева и не имеет окон. Единственный световой проем расположен в потолке помещения.</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="camping-card" data-category="houses">
+                            <img src="images/camp9.png" alt="Премиум паркинг">
+                            <div class="card-info">
+                                <h3>Кибитка 32 053</h3>
+                                <p>С точки зрения архитектуры объект представляет собой одновременно и сцену, и полноценную жилую ячейку, построенную на основе модели автобуса ПАЗ 3205</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="camping-section camping-type-section" data-section="tents">
+            <div class="container">
+                <h2 class="subtitle" data-category="tents" data-section="tents">Палатки</h2>
+                
+                <div class="tents-grid">
+                    <!-- Первый ряд -->
+                    <div class="tents-row">
+                        <div class="camping-card" data-category="tents" style="margin-left: 115px;">
+                            <img src="images/tent1.png" alt="Палатка Легкая">
+                            <div class="card-info">
+                                <h3>Глэмпинг</h3>
+                                <p>Палаточный лагерь повышенной комфортности на берегу реки Угра, для тех, кто любит комфорт, но хочет отдыхать на природе.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="tents" style="margin-right: 115px; margin-left: auto;">
+                            <img src="images/tent2.png" alt="Палатка Стандарт">
+                            <div class="card-info">
+                                <h3>Кэмпинг</h3>
+                                <p>Большие двухместные палатки, стоящие на специальных деревянных подиумах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Второй ряд -->
+                    <div class="tents-row">
+                        <div class="camping-card" data-category="tents" style="margin-left: 115px;">
+                            <img src="images/tent3.png" alt="Палатка Премиум">
+                            <div class="card-info">
+                                <h3>Место под палатку
+в глэмпинге</h3>
+                                <p>Вы можете приехать со своей палаткой и арендовать под неё деревянный подиум в глэмпинге «Угруан».</p>
+                            </div>
+                        </div>
+                        
+                        <div class="camping-card" data-category="tents" style="margin-right: 115px; margin-left: auto;">
+                            <img src="images/tent4.png" alt="Палатка Семейная">
+                            <div class="card-info">
+                                <h3>Место под палатку
+в кемпинге</h3>
+                                <p>Вы можете приехать со своей палаткой и арендовать под неё место в кемпинге.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="camping-section camping-type-section" data-section="rooms">
+            <div class="container">
+                <h2 class="subtitle" data-category="rooms" data-section="rooms">Номера в гостиничных домах</h2>
+                
+                <div class="rooms-grid">
+                    <!-- Ряд с 3 карточками -->
+                    <div class="camping-card" data-category="rooms">
+                        <img src="images/room1.png" alt="Стандартный номер">
+                        <div class="card-info">
+                            <h3>Дом Флоренского</h3>
+                            <p>Два отапливаемых жилых дома с несколькими отдельными комнатами</p>
+                        </div>
+                    </div>
+                    
+                    <div class="camping-card" data-category="rooms">
+                        <img src="images/room2.png" alt="Номер с террасой">
+                        <div class="card-info">
+                            <h3>Клевер</h3>
+                            <p>Выполнены из деревянного бруса, обшиты грубой старой доской снаружи и белой фанерой внутри, утеплены.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="camping-card" data-category="rooms">
+                        <img src="images/room3.png" alt="Люкс">
+                        <div class="card-info">
+                            <h3>Пижма</h3>
+                            <p>Летний двухместный домик в зоне кемпинга. В каждом домике две отдельные кровати, стеллаж.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="camping-section camping-type-section" data-section="auto">
+            <div class="container">
+                <h2 class="subtitle" data-category="auto" data-section="auto">Автокемпинг</h2>
+                
+                <div class="autocamping-row">
+                    <!-- Первая карточка -->
+                    <div class="camping-card" data-category="auto" style="margin-left: 115px;">
+                        <img src="images/auto1.png" alt="Стандартное место">
+                        <div class="card-info">
+                            <h3>Стоянка
+для автомобиля</h3>
+                            <p>Включает в себя места для установки палаток, лёгких домов, места для стоянок автомобилей, мотоциклов, автодомов.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Вторая карточка -->
+                    <div class="camping-card" data-category="auto" style="margin-right: 115px; margin-left: auto;">
+                        <img src="images/auto2.png" alt="Премиум место">
+                        <div class="card-info">
+                            <h3>Стоянка
+для автодома</h3>
+                            <p>Включает в себя места для установки палаток, лёгких домов, места для стоянок автомобилей, мотоциклов, автодомов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<!-- Поп-ап 1: отправка данных -->
+
+<div class="overlay" id="overlay" style="display: none;"></div>
+
+<div class="popup form-popup" id="formPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  
+  <div class="titlepop">JAZZ fest</div>
+
+  <div class="textdate">Выберите дату:</div>
+  <div class="dates">
+    <label><input type="checkbox" name="date" value="12 мая"> <span>12 мая</span></label>
+    <label><input type="checkbox" name="date" value="13 мая"> <span>19 мая</span></label>
+    <label><input type="checkbox" name="date" value="14 мая"> <span>13 мая</span></label>
+    <label><input type="checkbox" name="date" value="19 мая"> <span>20 мая</span></label>
+    <label><input type="checkbox" name="date" value="20 мая"> <span>14 мая</span></label>
+    <label><input type="checkbox" name="date" value="21 мая"> <span>21 мая</span></label>
+  </div>
+
+  <form id="jazzForm">
+    <div class="textdate">Введите данные:</div>
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Ваш номер телефона" required>
+    <input type="email" placeholder="Ваш e-mail" required>
+    <label class="consent">
+      <input type="checkbox" required>
+      <span><p1>Я согласен (-а) на обработку персональных данных</p1></span>
+    </label>
+    <button type="submit" class="send">отправить заявку</button>
+  </form>
+</div>
+
+
+
+<!-- Поп-ап 2: благодарность -->
+<div class="popup success-popup" id="successPopup" style="display: none;">
+  <button class="popup-close" aria-label="Закрыть попап">×</button>
+  <div class="texts1"><h2>Спасибо за вашу заявку!</h2></div>
+  <div class="texts2"><p>Наш менеджер скоро свяжется с вами.</p></div>
+  <div class="texts3"><p>Если у вас возникли какие-то вопросы,<br>обращайтесь по номеру <strong>+7 (111) 222-33-44</strong></p></div>
+</div>
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container"> 
+      <h3 class="footer-title">JAZZ fest</h3>
+        <div class="footer-content">
+        <!-- Первая колонка -->
+          <div class="footer-column">
+            <h5>О фестивале</h5>
+            <p>СМИ о нас</p>
+            <p>Здоровье и безопасность</p>
+            <p>Наши другие фестивали</p>
+            <p>Наши партнеры</p>
+          </div>
+
+        <!-- Вторая колонка -->
+          <div class="footer-column">
+            <h5>Посетителям</h5>
+            <p>Программа</p>
+            <p>Кемпинг</p>
+            <p>Как оформить<br>билет</p>
+            <p>Возврат средств</p>
+          </div>
+
+        <!-- Третья колонка -->
+          <div class="footer-column">
+            <h5>Артистам</h5>
+            <p>Условия участия</p>
+            <p>Как стать<br>участником</p>
+          </div>
+
+        <!-- Четвертая колонка -->
+          <div class="footer-column">
+            <h5>Контакты</h5>
+            <p>+7 (999) 777-99-77</p>
+            <p>jazz@fest.ru</p>
+          </div>
+
+        <!-- Пятая колонка (широкая) -->
+          <div class="footer-column wide-column">
+            <h5>Мы в социальных сетях</h5>
+            <img src="images/tg.svg" class="f-image">
+            <img src="images/vk.svg" class="f-image">
+            <img src="images/yt.svg" class="f-image">
+          </div>
+      </div>
+    </footer>
+<script src="script1.js"></script>
+  </body>
+</html>
